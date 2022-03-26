@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className='heroSection'>
             <h1>
                 I'm Tiago, a<br/>
-                <TextLoop>
+                <TextLoop className='textLoop'>
                     <span>UX Designer</span>
                     <span>UI Designer</span>
                     <span>Front-end Engineer</span>

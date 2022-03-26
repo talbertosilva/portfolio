@@ -6,4 +6,9 @@
     padding: 10% 5%;
     color: white;
     font-size: 4rem;
+    font-family: 'Manrope';
+}
+
+.textLoop {
+    color: aqua;
 }
