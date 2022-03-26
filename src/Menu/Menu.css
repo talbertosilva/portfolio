@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5%;
+}
+
+.menuList {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menuList li {
+    color: white;
+    cursor: pointer;
+}
