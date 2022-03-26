@@ -1,9 +1,13 @@
 header {
     display: flex;
-    height: 60px;
     justify-content: center;
     align-items: center;
-    margin: 0% 5%;
+    height: 80px;
+    width: 100%;
+    padding: 0% 5%;
+    background: none;
+    position: absolute;
+    top: 0;
 }
 
 .menuList {
@@ -17,4 +21,9 @@ header {
 .menuList li {
     color: white;
     cursor: pointer;
+
+}
+
+.menuList li:hover {
+    text-decoration: underline;
 }
