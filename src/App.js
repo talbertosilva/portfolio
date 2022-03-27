@@ -1,12 +1,18 @@
-import { Hero } from './Hero/Hero';
+import { Router } from 'react-router-dom';
+import './App.css'
 
-import { Menu } from './Menu/Menu';
+import { Cursor } from './Cursor';
+import { Hero } from './Hero';
+import { Info } from './Info';
+import { Menu } from './Menu';
 
 function App() {
   return (
-    <div className="App">
+    <div className='container'>
+      <Cursor />
       <Menu />
-      <Hero />
+      <section className='one'><Hero /></section>
+      <section className='two'><Info /></section>
     </div>
   );
 }

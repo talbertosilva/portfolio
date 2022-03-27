@@ -1,0 +1,25 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: 141414;
+    background-color: beige;
+    padding: 0% 5%;
+    font-family: 'Manrope';
+    gap: 24px;
+}
+
+.info h2 {
+    color: #141414;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    line-height: 2rem;
+    width: 90%;
+    overflow: hidden;
+}
+.info span {
+    color: #8b8b8b;
+    overflow: hidden;
+}

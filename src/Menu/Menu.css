@@ -5,9 +5,24 @@ header {
     height: 80px;
     width: 100%;
     padding: 0% 5%;
-    background: none;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    background: transparent;
+    z-index: 1;
+    font-family: 'Manrope';
+    mix-blend-mode: difference;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Manrope';
+    color: white;
+}
+
+hr{
+    display: flex;
+    align-self: center;    
+    width: 5rem;
+    height: 1px;
 }
 
 .menuList {
@@ -16,14 +31,50 @@ header {
     justify-content: space-between;
     flex-direction: row;
     list-style-type: none;
+    background: transparent;
 }
 
-.menuList li {
+.second {
+    display: flex;
+    gap: 48px;
+    background: transparent;
+}
+
+.menuList 
+#menuItem {
     color: white;
-    cursor: pointer;
-
+    background: transparent;
 }
 
-.menuList li:hover {
-    text-decoration: underline;
+#menuItem
+{
+    position: relative;
+}
+
+#menuItem:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#menuItem:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.icon {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (max-width: 900px) {
+    hr{
+        display: none;
+    }
 }
