@@ -1,0 +1,67 @@
+.containerWorks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #141414;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 8% 10%;
+    font-family: 'Manrope';
+    overflow: hidden;
+}
+
+.containerWorks h3 {
+    color: beige;
+    overflow: hidden;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.tech {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.technames {
+    display: flex;
+}
+
+.tech span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: rgb(129, 129, 129);
+    font-size: small;
+    width: 7rem;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2rem;
+    padding: 1% 2%;
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.containerWorks img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.containerWorks img:hover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.80;
+    transition: all 200ms ease;
+}
+
+.containerWorks a {
+    overflow: hidden;
+}

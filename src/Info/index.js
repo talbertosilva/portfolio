@@ -4,7 +4,7 @@ import './info.css'
 
 export const Info = () => {
   return (
-    <div className='info'>
+    <div id='info' className='info'>
         <span>About</span>
         <h2>
           I'm a UX/UI Designer and front-end engineer focused in React Framework. <br/>

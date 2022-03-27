@@ -46,6 +46,28 @@ hr{
     background: transparent;
 }
 
+#name
+{
+    position: relative;
+}
+
+#name:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#name:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
 #menuItem
 {
     position: relative;
@@ -75,6 +97,19 @@ hr{
 
 @media (max-width: 900px) {
     hr{
+        display: none;
+    }
+
+    .menuList {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        list-style-type: none;
+        background: transparent;
+    }
+
+    .menuList #name {
         display: none;
     }
 }

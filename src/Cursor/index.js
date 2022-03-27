@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from 'react'
+import React, { useEffect, useRef, useState} from 'react'
 
 import './cursor.css'
 
@@ -25,6 +25,20 @@ export const Cursor = () => {
             });
         };
 
+        const addImgEvents = () => {
+            document.querySelectorAll('img').forEach((img) => {
+                img.addEventListener('mouseover', () => {
+                    document.getElementById("cursor").classList.add("hoverIMG")
+                    setTexto("CLICK")
+                });
+                img.addEventListener('mouseout', () => {
+                    document.getElementById("cursor").classList.remove("hoverIMG")
+                    setTexto("")
+                });
+            });
+        }
+
+        addImgEvents();
         addLinkEvents();
     }, []);
 
@@ -35,7 +49,9 @@ export const Cursor = () => {
         cursorRef.current.style.transform = `translate(${mouseX}px,${mouseY}px)`;
     }
 
+    const [texto, setTexto] = useState("");
+
     return (
-        <div className={'app-cursor'} ref={cursorRef} id="cursor" />
+        <div className={'app-cursor'} ref={cursorRef} id="cursor">{texto}</div>
     )
 }

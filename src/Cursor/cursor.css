@@ -30,3 +30,29 @@
 .hide {
     display: none;
 }
+
+.hoverIMG{
+    z-index: 1000;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate(0,0);
+    position: fixed;
+    transition: all 100ms ease;
+    mix-blend-mode: normal;
+    font-family: 'Manrope';
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 768px) {
+    .app-cursor{
+        display: none;
+    }
+}

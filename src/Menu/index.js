@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 import { BiDownArrowAlt } from 'react-icons/bi'
 
@@ -10,12 +9,12 @@ export const Menu = () => {
         <header>
             <ul className='menuList'>
                 <div className='second'>
-                    <li id='menuItem'><Link to="/">Tiago Silva</Link></li>
+                    <li id='name'><a href='#hero'>Tiago Silva</a></li>
                     <hr />
                 </div>
                 <div className='second'>
-                    <li id='menuItem'>Work</li>
-                    <li id='menuItem'>Info</li>
+                    <li id='menuItem'><a href='#works'>Work</a></li>
+                    <li id='menuItem'><a href='#info'>Info</a></li>
                     <li id='menuItem'>
                         Resume<BiDownArrowAlt className='icon' size={16}/>
                     </li>

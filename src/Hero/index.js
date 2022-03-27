@@ -7,7 +7,7 @@ import './Hero.css';
 
 export const Hero = () => {
     return (
-        <div className='heroSection'>
+        <div id='hero' className='heroSection'>
             <h1>
                 I'm Tiago, a<br />
                 <TextLoop id='textloop' mask={true} interval={3000} className='textLoop'>
