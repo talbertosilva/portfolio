@@ -1,4 +1,3 @@
-import { Router } from 'react-router-dom';
 import './App.css'
 
 import { Cursor } from './Cursor';

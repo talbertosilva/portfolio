@@ -15,7 +15,7 @@ export const Works = (props) => {
                     {api ? <span>API</span> : null}
                 </div>
             </div>
-            <a href={url} target="_blank"><img src={img} alt="project image"/></a>
+            <a href={url} target="_blank" rel="noreferrer"><img src={img} alt="project"/></a>
         </div>
     )
 }
