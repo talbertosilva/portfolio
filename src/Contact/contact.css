@@ -24,6 +24,14 @@
     width: 90%;
     overflow: hidden;
 }
+.contact #resumetext {
+    color: #383838;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    line-height: 2.5rem;
+    width: 90%;
+    overflow: hidden;
+}
 
 .contact span {
     color: #8b8b8b;
@@ -42,6 +50,13 @@
     gap: 12px;
 }
 
+.contact .resume {
+    display: flex;
+    text-decoration: underline;
+    align-items: center;
+    gap: 12px;
+}
+
 .contact .icons {
     display: flex;
     align-items: center;
@@ -51,4 +66,22 @@
 
 .contact .icons svg:hover {
     fill: #141414;
+}
+
+@media (max-width: 728px){
+    .contact h2 {
+        color: #383838;
+        letter-spacing: 0.2px;
+        font-size: medium;
+        font-weight: 500;
+        line-height: 1.5rem;
+        width: 90%;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 728px) {
+    .contact .resume {
+        display: none;
+    }
 }

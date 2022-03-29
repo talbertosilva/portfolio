@@ -95,8 +95,12 @@ hr{
   margin-left: 8px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 728px) {
     hr{
+        display: none;
+    }
+
+    .resume {
         display: none;
     }
 

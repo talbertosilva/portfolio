@@ -5,6 +5,7 @@ import './contact.css'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { AiFillInstagram, AiFillBehanceCircle, AiFillLinkedin } from 'react-icons/ai'
+import { HiDocumentText } from 'react-icons/hi'
 
 export const Contact = () => {
     return (
@@ -12,6 +13,7 @@ export const Contact = () => {
             <span>Contact</span>
             <h2 className='name'><BsFillPersonFill fill='#565656'/>Tiago Silva</h2>
             <h2 className='email'><MdEmail fill='#565656'/>tiagoansilva.9@gmail.com</h2>
+            <h2 className='resume'><HiDocumentText fill='#565656'/><a href='' id='resumetext'>Download resume</a></h2>
             <div className='icons'>
                 <a href='https://instagram.com/tiago_codesign' target="_blank" rel="noreferrer"><AiFillInstagram id='social' size={32} fill='#383838'/></a>
                 <a href='https://www.behance.net/tansgraphi8c82' target="_blank" rel="noreferrer"><AiFillBehanceCircle id='social' size={32} fill='#383838'/></a>
