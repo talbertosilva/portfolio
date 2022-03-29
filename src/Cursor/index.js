@@ -18,9 +18,11 @@ export const Cursor = () => {
             document.querySelectorAll('li').forEach((li) => {
                 li.addEventListener('mouseover', () => {
                     document.getElementById("cursor").classList.add("hover")
+                    setTexto("")
                 });
                 li.addEventListener('mouseout', () => {
                     document.getElementById("cursor").classList.remove("hover")
+                    setTexto("")
                 });
             });
         };
@@ -38,6 +40,34 @@ export const Cursor = () => {
             });
         }
 
+        const addSvgEvents = () => {
+            document.querySelectorAll('#social').forEach((svg) => {
+                svg.addEventListener('mouseover', () => {
+                    document.getElementById("cursor").classList.add("hover")
+                    setTexto("")
+                });
+                svg.addEventListener('mouseout', () => {
+                    document.getElementById("cursor").classList.remove("hover")
+                    setTexto("")
+                });
+            });
+        }
+
+        const addTextEvents = () => {
+            document.querySelectorAll('#hovertextoefeito').forEach((txt) => {
+                txt.addEventListener('mouseover', () => {
+                    document.getElementById("cursor").classList.add("hoverText")
+                    setTexto("")
+                });
+                txt.addEventListener('mouseout', () => {
+                    document.getElementById("cursor").classList.remove("hoverText")
+                    setTexto("")
+                });
+            });
+        }
+
+        addTextEvents();
+        addSvgEvents();
         addImgEvents();
         addLinkEvents();
     }, []);

@@ -15,6 +15,7 @@ export const Menu = () => {
                 <div className='second'>
                     <li id='menuItem'><a href='#works'>Work</a></li>
                     <li id='menuItem'><a href='#info'>Info</a></li>
+                    <li id='menuItem'><a href='#contact'>Contact</a></li>
                     <li id='menuItem'>
                         Resume<BiDownArrowAlt className='icon' size={16}/>
                     </li>

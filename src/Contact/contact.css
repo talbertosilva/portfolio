@@ -1,4 +1,4 @@
-.info {
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@
     font-weight: 800;
 }
 
-.info h2 {
+.contact h2 {
     color: #383838;
     letter-spacing: 0.2px;
     font-weight: 500;
@@ -25,14 +25,30 @@
     overflow: hidden;
 }
 
-.info span {
+.contact span {
     color: #8b8b8b;
     overflow: hidden;
 }
 
-@media (max-width: 728px) {
-    .info h2 {
-        font-size: medium;
-        line-height: 1.75rem;
-    }
+.contact .name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact .email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact .icons {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.contact .icons svg:hover {
+    fill: #141414;
 }

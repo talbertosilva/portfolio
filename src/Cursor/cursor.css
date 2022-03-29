@@ -5,6 +5,7 @@
     height: 30px;
     border: 2px solid white;
     background: transparent;
+    background-image: none;
     pointer-events: none;
     overflow: hidden;
     transform: translate(0,0);
@@ -47,6 +48,30 @@
     position: fixed;
     transition: all 100ms ease;
     mix-blend-mode: normal;
+    font-family: 'Manrope';
+    letter-spacing: 0.1rem;
+}
+
+.hoverText{
+    z-index: 1000;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 0;
+    background: fixed;
+    background-image: url('../../public/web.gif');
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate(0,0);
+    position: fixed;
+    transition: all 100ms ease;
+    mix-blend-mode: lighten;
     font-family: 'Manrope';
     letter-spacing: 0.1rem;
 }
