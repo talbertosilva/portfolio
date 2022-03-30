@@ -71,12 +71,12 @@
     transform: translate(0,0);
     position: fixed;
     transition: all 100ms ease;
-    mix-blend-mode: lighten;
+    mix-blend-mode: difference;
     font-family: 'Manrope';
     letter-spacing: 0.1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1360px) {
     .app-cursor{
         display: none;
     }

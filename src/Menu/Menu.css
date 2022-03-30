@@ -18,13 +18,6 @@ a {
     color: white;
 }
 
-hr{
-    display: flex;
-    align-self: center;    
-    width: 5rem;
-    height: 1px;
-}
-
 .menuList {
     display: inline-flex;
     width: 100%;
@@ -96,9 +89,6 @@ hr{
 }
 
 @media (max-width: 728px) {
-    hr{
-        display: none;
-    }
 
     .resume {
         display: none;

@@ -55,7 +55,7 @@ h1 {
     gap: 1rem;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 1360px) {
     .heroSection{
         padding: 30% 10%;
         font-size: 1.8rem;

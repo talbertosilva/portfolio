@@ -10,7 +10,6 @@ export const Menu = () => {
             <ul className='menuList'>
                 <div className='second'>
                     <li id='name'><a href='#hero'>Tiago Silva</a></li>
-                    <hr />
                 </div>
                 <div className='second'>
                     <li id='menuItem'><a href='#works'>Work</a></li>
