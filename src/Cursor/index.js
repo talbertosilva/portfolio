@@ -6,6 +6,7 @@ export const Cursor = () => {
     const cursorRef = useRef(null);
 
     useEffect(() => {
+        document.getElementById("cursor").classList.add("hide");
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseleave', () => {
             document.getElementById("cursor").classList.add("hide");
@@ -76,6 +77,7 @@ export const Cursor = () => {
         const { clientX, clientY } = e;
         const mouseX = clientX - cursorRef.current.clientWidth / 2;
         const mouseY = clientY - cursorRef.current.clientHeight / 2;
+        document.getElementById("cursor").classList.remove("hide");
         cursorRef.current.style.transform = `translate(${mouseX}px,${mouseY}px)`;
     }
 

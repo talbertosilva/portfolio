@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { BiDownArrowAlt } from 'react-icons/bi'
+import { motion } from "framer-motion"
 
 import './Menu.css';
 
@@ -8,17 +9,17 @@ export const Menu = () => {
     return (
         <header>
             <ul className='menuList'>
-                <div className='second'>
+                <motion.div className='second' initial={{ x: -250 }} animate={{ x: 0, transition: { type: 'spring', duration: 2 } }}>
                     <li id='name'><a href='#hero'>Tiago Silva</a></li>
-                </div>
-                <div className='second'>
-                    <li id='menuItem'><a href='#works'>Work</a></li>
+                </motion.div>
+                <motion.div className='second' initial={{ x: 250 }} animate={{ x: 0, transition: { type: 'spring', duration: 2 } }}>
                     <li id='menuItem'><a href='#info'>Info</a></li>
+                    <li id='menuItem'><a href='#works'>Work</a></li>
                     <li id='menuItem'><a href='#contact'>Contact</a></li>
                     <li id='menuItem' className='resume'>
-                        Resume<BiDownArrowAlt className='icon' size={16}/>
+                        <a href='https://drive.google.com/file/d/17LMBQjv3ERM5U2DIZ0ANq2HIHW2HS9XX/view?usp=sharing'>Resume<BiDownArrowAlt className='icon' size={16} /></a>
                     </li>
-                </div>
+                </motion.div>
             </ul>
         </header>
     )

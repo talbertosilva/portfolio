@@ -10,6 +10,7 @@
     background-image: linear-gradient(#141414, #090909);
     font-size: 5rem;
     font-family: 'Manrope';
+    overflow: hidden;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
     border-radius: 25px;
     border-width: 1px;
     padding: 7px 21px;
+    margin-left: 1rem;
     color: #6d6d6d;
     animation: scaleinfinite 5s infinite ease;
 }
@@ -36,7 +38,7 @@ h1 {
     }
 
     50% {
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
 
     100% {
@@ -55,7 +57,17 @@ h1 {
     gap: 1rem;
 }
 
-@media (max-width: 1360px) {
+@media (min-width: 768px) and (max-width: 1360px) {
+    .heroSection{
+        padding: 10% 10%;
+        font-size: 3rem;
+    }
+    #hoverme {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
     .heroSection{
         padding: 30% 10%;
         font-size: 1.8rem;
