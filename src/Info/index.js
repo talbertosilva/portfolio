@@ -15,7 +15,7 @@ export const Info = () => {
         if (inView) {
             animation.start({
                 opacity: 1,
-                x: 0, 
+                y: 0, 
                 transition: { 
                     type: 'spring', 
                     duration: 1.5
@@ -26,10 +26,9 @@ export const Info = () => {
         if (!inView) {
             animation.start({
                 opacity: 0,
-                x: -250
+                y: 250
             })
         }
-        console.log("use effect hook, inInfoView = ", inView);
     }, [inView]);
 
 

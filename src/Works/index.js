@@ -42,7 +42,6 @@ export const Works = (props) => {
                 z: -1000
             })
         }
-        console.log("use effect hook, inView = ", inView);
     }, [inView]);
 
     return (
