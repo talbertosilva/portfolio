@@ -17,7 +17,7 @@ export const Menu = () => {
                     <li id='menuItem'><a href='#works'>Work</a></li>
                     <li id='menuItem'><a href='#contact'>Contact</a></li>
                     <li id='menuItem' className='resume'>
-                        <a href='https://drive.google.com/file/d/17LMBQjv3ERM5U2DIZ0ANq2HIHW2HS9XX/view?usp=sharing'>Resume<BiDownArrowAlt className='icon' size={16} /></a>
+                        <a href='https://drive.google.com/file/d/1YWt4cpbwxK3l0OWJre3omBuLFv269YIH/view?usp=sharing'>Resume<BiDownArrowAlt className='icon' size={16} /></a>
                     </li>
                 </motion.div>
             </ul>

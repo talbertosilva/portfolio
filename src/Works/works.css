@@ -28,6 +28,15 @@
     display: flex;
 }
 
+.projectname {
+    display: flex;
+    gap: 32px;
+}
+
+.projectname svg:hover {
+    fill: white;
+}
+
 .tech span {
     display: flex;
     justify-content: center;
